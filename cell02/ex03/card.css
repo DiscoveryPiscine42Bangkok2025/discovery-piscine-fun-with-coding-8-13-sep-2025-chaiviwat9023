@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table td {
+    padding: 0;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2 {
+    margin: 20px 0 10px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 10px 0;
+    color: #888;
+}
+
+p.school {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    padding: 10px 0 20px 0;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.contact-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 18px 0;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}
