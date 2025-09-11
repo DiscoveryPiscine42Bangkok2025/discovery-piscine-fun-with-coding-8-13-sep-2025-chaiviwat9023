@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding-bottom: 5vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -10px; right: -10px; bottom: -10px; left: -10px;
+            background: url("https://www.it.kmitl.ac.th/_next/image?url=https%3A%2F%2Fs3.www.it.kmitl.co%2Fwwwitkmitl%2Flife-1-2160x1080.jpg&w=3840&q=75") no-repeat center center/cover;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 48px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            transition: background 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Rush Project</h1>
+    <div class="container">
+        <div class="card"><a href="person1.html">Porsche</a></div>
+        <div class="card"><a href="person2.html">Tang</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+section:nth-of-type(even) {
+     background-color: #fdfdfd;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #007BFF;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.skill-item p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.project-card {
+    max-width: 500px;
+    margin: 20px auto 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-info h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+.social-icons img {
+    width: 35px;
+    height: 35px;
+}
+
